@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Typical imports; notice the import of java.lang.String -->
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.CustomBurgerController">
+    <!-- Example customization options -->
+    <Label text="Customize your Burger:"/>
+    
+    <!-- You might want options like bun type, cheese, condiments etc. -->
+    <Label text="Bun Type:"/>
+    <ComboBox fx:id="bunTypeCombo">
+        <!-- Add items accordingly, e.g., "Sesame", "Whole Wheat", etc. -->
+    </ComboBox>
+    
+    <Label text="Cheese:"/>
+    <ComboBox fx:id="cheeseCombo">
+        <!-- Options can be added here -->
+    </ComboBox>
+    
+    <!-- Action Buttons -->
+    <Button text="Submit Burger" onAction="#submitBurger"/>
+    <Button text="Cancel" onAction="#cancel"/>
+</VBox>

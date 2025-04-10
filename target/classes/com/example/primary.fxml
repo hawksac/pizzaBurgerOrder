@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.PrimaryController">
+    <HBox spacing="10">
+        <Button text="Order Custom Pizza" onAction="#orderCustomPizza"/>
+    </HBox>
+    <HBox spacing="10">
+        <Button text="Order Custom Burger" onAction="#orderCustomBurger"/>
+    </HBox>
+    <Label text="Order Details:"/>
+    <ScrollPane fitToWidth="true">
+        <content>
+            <TextArea fx:id="orderDisplay" editable="false" wrapText="true"/>
+        </content>
+    </ScrollPane>
+    <Label fx:id="subtotalLabel" text="Total: $0.00"/>
+    <Button text="View Receipt" onAction="#switchToSecondary"/>
+</VBox>
