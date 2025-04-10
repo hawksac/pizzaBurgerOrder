@@ -8,6 +8,7 @@ com/example/domain/topping/AsiagoTopping.class
 com/example/PrimaryController.class
 com/example/SecondaryController.class
 module-info.class
+com/example/CustomBurgerController.class
 com/example/domain/topping/PepperoniTopping.class
 com/example/domain/crust/ThickCrust.class
 com/example/domain/MenuItem.class
